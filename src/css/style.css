@@ -36,7 +36,11 @@ body {
   border-radius: 4px;
   background-color: white;
   cursor: pointer;
-  /* ! */
+  /* ! 
+    align-items : 세로축 기준 정렬 
+    justify-content : 가로축 기준 정렬 
+    transition : key:hover 변화시 해당 시간에 걸쳐 변화 
+  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +126,9 @@ body {
   transition: 0.4s;
 }
 
-/* ! */
+/* !
+  스위치 원형 부분 표현 
+*/
 .slider::before {
   position: absolute;
   content: "";
@@ -140,7 +146,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  /* ! */
+  /* ! 스위치 위치 이동 */
   transform: translateX(26px);
 }
 
